@@ -68,9 +68,9 @@ npm run build
 
 ## 🔗 Used By
 
-- [scraper-service](https://github.com/job-market-intelligence/scraper-service)
-- [nlp-service](https://github.com/job-market-intelligence/nlp-service)
-- [aggregation-service](https://github.com/job-market-intelligence/aggregation-service)
-- [auth-service](https://github.com/job-market-intelligence/auth-service)
-- [api-gateway](https://github.com/job-market-intelligence/api-gateway)
-- [frontend](https://github.com/job-market-intelligence/frontend)
+- [scraper-service](https://github.com/OferGM-job-market-intelligence/scraper-service)
+- [nlp-service](https://github.com/OferGM-job-market-intelligence/nlp-service)
+- [aggregation-service](https://github.com/OferGM-job-market-intelligence/aggregation-service)
+- [auth-service](https://github.com/OferGM-job-market-intelligence/auth-service)
+- [api-gateway](https://github.com/OferGM-job-market-intelligence/api-gateway)
+- [frontend](https://github.com/OferGM-job-market-intelligence/frontend)
