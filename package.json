@@ -1,15 +1,51 @@
 {
   "name": "@job-market/shared",
   "version": "1.0.0",
-  "description": "Shared types, data, and utilities for Job Market Intelligence Platform",
+  "description": "Shared types, constants, and utilities for Job Market Intelligence Platform",
   "main": "index.ts",
   "types": "index.ts",
   "type": "module",
-  "keywords": ["job-market", "types", "shared"],
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "lint": "eslint **/*.ts",
+    "format": "prettier --write \"**/*.ts\"",
+    "test": "echo \"No tests yet\" && exit 0"
+  },
+  "keywords": [
+    "job-market",
+    "types",
+    "typescript",
+    "shared",
+    "microservices"
+  ],
   "author": "Ofer Graber Mizrahi",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/OferGM-job-market-intelligence/shared"
+  },
+  "bugs": {
+    "url": "https://github.com/OferGM-job-market-intelligence/shared/issues"
+  },
+  "homepage": "https://github.com/OferGM-job-market-intelligence/shared#readme",
+  "devDependencies": {
+    "typescript": "^5.3.3",
+    "eslint": "^8.56.0",
+    "@typescript-eslint/eslint-plugin": "^6.19.0",
+    "@typescript-eslint/parser": "^6.19.0",
+    "prettier": "^3.2.4"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "exports": {
+    ".": "./index.ts",
+    "./types/job": "./types/job.ts",
+    "./types/skill": "./types/skill.ts",
+    "./types/user": "./types/user.ts",
+    "./types/analytics": "./types/analytics.ts",
+    "./data/constants": "./data/constants.ts",
+    "./utils/validators": "./utils/validators.ts",
+    "./utils/formatters": "./utils/formatters.ts"
   }
 }
