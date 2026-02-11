@@ -6,6 +6,7 @@
 
 /**
  * Skill categories
+ * Updated Day 6: Added 'testing' category to match skill-taxonomy.json
  */
 export type SkillCategory =
   | 'programming_language'
@@ -14,6 +15,7 @@ export type SkillCategory =
   | 'cloud_platform'
   | 'devops_tool'
   | 'ml_library'
+  | 'testing'
   | 'soft_skill'
   | 'other';
 
@@ -52,6 +54,38 @@ export interface Skill {
   
   /** Difficulty level (1-5) */
   difficulty?: number;
+}
+
+/**
+ * Skill taxonomy entry (matches skill-taxonomy.json format)
+ * Used when loading taxonomy from JSON file
+ */
+export interface SkillTaxonomyEntry {
+  /** Canonical/standardized skill name */
+  canonical: string;
+  
+  /** Alternative names and spellings */
+  aliases: string[];
+  
+  /** Skill category */
+  category: SkillCategory;
+  
+  /** Related or complementary skills */
+  related: string[];
+}
+
+/**
+ * Skill taxonomy file structure
+ */
+export interface SkillTaxonomy {
+  metadata: {
+    version: string;
+    total_skills: number;
+    last_updated: string;
+    description: string;
+    categories: SkillCategory[];
+  };
+  skills: SkillTaxonomyEntry[];
 }
 
 /**

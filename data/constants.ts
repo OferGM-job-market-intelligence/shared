@@ -204,6 +204,7 @@ export const COUNTRIES = [
 
 /**
  * Default skill categories for taxonomy
+ * Updated Day 6: Added 'testing' category to match skill-taxonomy.json
  */
 export const SKILL_CATEGORIES = [
   'programming_language',
@@ -212,6 +213,7 @@ export const SKILL_CATEGORIES = [
   'cloud_platform',
   'devops_tool',
   'ml_library',
+  'testing',
   'soft_skill',
   'other',
 ] as const;
